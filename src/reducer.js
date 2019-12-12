@@ -9,9 +9,9 @@ function counter(state, action) {
 
   switch (action.type) {
     case 'increase':
-      return { count: count++ };
+      return { count: count = count + 1 };
     case 'decrease':
-      return { count: count-- };
+      return { count: count = count - 1 };
     default:
       return state;
   }
